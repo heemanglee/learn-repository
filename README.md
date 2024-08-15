@@ -1,2 +1,1 @@
-# TIL
-Today I Learned
+### [Today I Learned](https://github.com/heemanglee/TIL/discussions)
