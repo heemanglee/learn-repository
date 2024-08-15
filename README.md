@@ -1,1 +1,2 @@
-### [Today I Learned](https://github.com/heemanglee/TIL/discussions)
+### Blog : https://server-technology.tistory.com/
+### Github : https://github.com/heemanglee/learn-repository/discussions
