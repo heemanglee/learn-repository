@@ -7,8 +7,8 @@ PCB는 프로세스의 metadata를 담고 있는 공간이다. PCB에 저장되�
 - PID(Process ID)
 - 프로세스 상태(Created, Ready, Running, Blocked, Terminiated)
 - 프로세스의 우선순위(스케줄링 우선순위)
-- CPU Register
-- CPU PC
+- CPU Register : 프로세스가 계산한 데이터를 담는 공간
+- CPU PC : 다음에 실행할 명령어의 메모리 주소
 - ...
 
 ## 2. Context Switching(문맥 교환)
