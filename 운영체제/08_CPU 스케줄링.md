@@ -9,15 +9,15 @@
   - 우선순위가 더 높은 프로세스에게 CPU를 제공하고자, 사용 중인 CPU를 회수하여 제공한다.
 
 ## 2. 비선점 스케줄링(Non-Preemptive)
-비선점 스케줄링이란 CPU를 할당받은 프로세스가 직접 CPU를 반납하지 않는 이상, Ready Queue에 있는 프로세스가 CPU를 할당받지 못한다. 
+비선점 스케줄링이란 CPU를 할당받은 프로세스가 직접 CPU를 반납하지 않는 이상, 사용 중인 CPU를 강제로 회수할 수 없다.
 직접 CPU를 반납하는 경우는 입출력 I/O에 의해 Blocked 상태가 되거나, Terminated 상태가 되면서 CPU를 반납하는 것이다.
 비선점 스케줄링의 대표적인 알고리즘으로 FCFS, SJF가 있다.
 
 ### FCFS(First-Come, First-Out) 알고리즘
-FCFS는 FIFO 구조의 Queue를 사용하여 CPU를 프로세스에게 할당하는 방법이다. 따라서 Ready Queue에 들어온 프로세스부터 CPU를 사용할 수 있다.
+FCFS는 FIFO 구조의 Queue를 사용하여 CPU를 프로세스에게 할당하는 방법이다. 따라서 Ready Queue에 먼저 들어온 프로세스부터 CPU를 사용할 수 있다.
 이 알고리즘은 Queue에 먼저 들어온 프로세스부터 CPU를 할당하면 되므로 구현이 간단하다는 장점이 있다. 그러나 FIFO 구조가 오히려 평균 대기 시간을 증가시킨다는 단점이 존재한다. 
 
-<img width="748" alt="FCFS 단점1" src="https://github.com/user-attachments/assets/36e94f72-e7ce-42b5-9ebc-1945cafb8c8d" /> <br />
+<img width="748" alt="FCFS 단점1" src="https://github.com/user-attachments/assets/b2b74fc3-c1c2-4ec4-b548-fefd3485b867" /> <br />
 그림을 보면 P1, P2, P3 순서대로 Ready Queue에 프로세스가 삽입된 상태이다. Queue는 FIFO 구조이므로 먼저 들어온 P1 프로세스부터 CPU가 할당되어 마지막으로 P3 프로세스가 할당받는다. 
 P2, P3 프로세스는 P1에 비해 실행 시간이 매우 짧음에도 P1 프로세스가 CPU를 반납할 때까지 기다려야 한다. P2는 CPU를 사용하기 위해 24초를 기다려야 하고, P3는 27초를 기다려야 한다. 따라서 Queue에 담긴 모든 프로세스가 CPU를 할당받을 때까지의
 평균 대기 시간이 매우 길다는 단점이 존재한다.
