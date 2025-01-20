@@ -12,9 +12,10 @@ JVM은 운영체제 위에서 실행되어 자바 프로그램이 운영체제�
 4. JVM 실행 엔진(Execution Engine)은 자바 인터프리터(interpreter)를 사용하여 바이트 코드를 해석하여 기계어로 변환한다. CPU는 기계어만 이해할 수 있으므로 변환 과정이 필요하다.
 
 자바는 속도가 느리다는 단점이 있는데, 그 이유는 프로그램을 실행하기 위해 바이트 코드를 기계어로 변환하는 과정이 발생하기 때문이다.
+> 바이트코드는 JVM(Java Virtual Machine)이 이해할 수 있는 언어이다.
 
 ## 3. JVM Runtime Data Area
-Runtime Data Area는 JVM이 자바 프로그램을 실행하면서 사용한 데이터를 저장하는 공간이다. 이 공간은 JVM이 메모리 공간을 효율적으로 관리하기 위해 사용하며, 5개의 공간으로 나뉘어 사용된다.
+Runtime Data Area는 JVM이 자바 프로그램을 실행하면서 사용한 데이터를 저장하는 공간이다. 즉, JVM의 메모리 영역이다.
 - Method Area
 - Heap
 - Stack
