@@ -13,7 +13,7 @@ Forward Proxy는 클라이언트 측에서 동작하는 프록시 서버이다. 
 - 프록시 사용 후
 <img width="757" alt="image" src="https://github.com/user-attachments/assets/a0df6c5d-79d9-4087-8c71-db1251022c45" />
 
-사용자가 주소창에 www.google.com 을 입력하면 Forward Proxy가 요청을 받아서 처리한다. 즉, 사용자는 해당 사이트에 직접 접근하는 것이 아닌 프록시 서버를 거쳐 접속되는 것이다.
+사용자가 주소창에 www.google.com 을 입력하면 Forward Proxy가 요청을 받아서 처리한다. 사용자는 해당 사이트에 직접 접근하는 것이 아닌 프록시 서버를 거쳐 접속되는 것이다.
 
 ### 2-1. Forward Proxy 사례
 군대에서는 인트라넷(내부망)을 사용하여 군 업무와 관련없는 사이트의 접속을 차단한다. 예를 들어, 인트라넷을 사용하는 컴퓨터에서 www.google.com 을 입력하면 접속이 차단당한다. 이는 Forward Proxy에서 클라이언트의 요청을 차단했기 때문인데 과정을 자세히 알아보자.
@@ -33,7 +33,7 @@ Reverse Proxy는 서버 측에서 동작하는 프록시 서버이다. 클라이
 ### 3-1. Reverse Proxy 사례
 Nginx를 사용하여 클라이언트가 서버로 보내는 요청을 먼저 받아 대신 서버에 전달한다. 클라이언트가 HTTPS 요청을 보내면 Nginx에서 443 포트로 오는 요청을 대기하였다가 서버로 전달한다.
 1. 클라이언트가 https://google.com 으로 요청
-2. Nginx(Reverse Proxy)가 요청을 받아 백엔드 서버(Http://localhost:8080)로 전달
+2. Nginx(Reverse Proxy)가 요청을 받아 백엔드 서버(http://localhost:8080) 로 전달
 3. 백엔드 서버가 요청을 처리하고 응답을 생성
 4. Nginx가 백엔드 서버의 응답을 받아 클라이언트에게 반환
 
