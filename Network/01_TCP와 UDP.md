@@ -1,7 +1,6 @@
 ## 1. TCP(Transmission Control Protocol)
 
-![스크린샷_2025-01-30_오후_8 30 50](https://github.com/user-attachments/assets/b6c5d4a0-0301-4f2d-a5a3-5d80aa69f486)
-
+![스크린샷_2025-01-30_오후_8 30 57](https://github.com/user-attachments/assets/c90ed7a7-bd79-4cc9-92a8-f699b284e4a5)
 
 TCP 프로토콜은 OSI 7계층에서 전송 계층에 해당한다. TCP 프로토콜은 연결 지향적이고 신뢰성 있는 프로토콜이다. 두 호스트는 3-way handshake를 통해 세션을 맺고 데이터를 주고받는다. 3-way handshake 덕분에 안전하게 데이터를 주고받을 수 있다.
 
@@ -14,8 +13,7 @@ TCP 프로토콜은 4가지 특징을 갖는다.
 
 ## 2. UDP(User Datagram Protocol)
 
-![스크린샷_2025-01-30_오후_8 30 57](https://github.com/user-attachments/assets/c90ed7a7-bd79-4cc9-92a8-f699b284e4a5)
-
+![스크린샷_2025-01-30_오후_8 30 50](https://github.com/user-attachments/assets/b6c5d4a0-0301-4f2d-a5a3-5d80aa69f486)
 
 UDP 프로토콜도 TCP와 마찬가지로 전송 계층에 해당한다. UDP 프로토콜은 비연결지향적이면서 신뢰성 없는 프로토콜이다. 두 호스트가 데이터를 주고받기 전에 세션을 맺지 않기 때문에, 송신자는 수신자가 패킷을 전송받았는지 알 수 없다.
 
